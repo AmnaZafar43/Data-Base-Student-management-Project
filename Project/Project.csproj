@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEBC422A-343D-408C-933D-51613E32103D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AComponentForm.Designer.cs">
+      <DependentUpon>AComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assesmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assesmentForm.Designer.cs">
+      <DependentUpon>assesmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assessmentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assessmentReport.Designer.cs">
+      <DependentUpon>assessmentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendanceForm.Designer.cs">
+      <DependentUpon>attendanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classAtten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classAtten.Designer.cs">
+      <DependentUpon>classAtten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloForm.Designer.cs">
+      <DependentUpon>CloForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cloReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cloReport.Designer.cs">
+      <DependentUpon>cloReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resultForm.Designer.cs">
+      <DependentUpon>resultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultReport.Designer.cs">
+      <DependentUpon>ResultReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rubLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rubLevelForm.Designer.cs">
+      <DependentUpon>rubLevelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rubricForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rubricForm.Designer.cs">
+      <DependentUpon>rubricForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student.Designer.cs">
+      <DependentUpon>student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AComponentForm.resx">
+      <DependentUpon>AComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assesmentForm.resx">
+      <DependentUpon>assesmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assessmentReport.resx">
+      <DependentUpon>assessmentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendanceForm.resx">
+      <DependentUpon>attendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classAtten.resx">
+      <DependentUpon>classAtten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloForm.resx">
+      <DependentUpon>CloForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cloReport.resx">
+      <DependentUpon>cloReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resultForm.resx">
+      <DependentUpon>resultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultReport.resx">
+      <DependentUpon>ResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rubLevelForm.resx">
+      <DependentUpon>rubLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rubricForm.resx">
+      <DependentUpon>rubricForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-management-system.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-management-system-2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
